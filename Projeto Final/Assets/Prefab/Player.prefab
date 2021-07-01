@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2464458744562331479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.59, y: -2.01, z: 0}
-  m_LocalScale: {x: 0.83461934, y: 0.9770708, z: 1}
+  m_LocalPosition: {x: -9.5415, y: -2.27, z: 0}
+  m_LocalScale: {x: 0.5847112, y: 0.7127839, z: 1}
   m_Children:
   - {fileID: 2464458745475707046}
   - {fileID: 2464458744762153673}
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6f05db9c242cf478537d684ce7b742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 15
+  health: 300
   speed: 5
-  jumpForce: 5
+  jumpForce: 7
   foot: {fileID: 2464458745475707046}
   collisionRadius: 0.2
   layerGround:
@@ -159,6 +159,7 @@ MonoBehaviour:
     m_Bits: 8
   isOnFloor: 0
   jumpAudio: {fileID: 0}
+  explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
 --- !u!114 &2464458744562331501
 MonoBehaviour:
   m_ObjectHideFlags: 0
