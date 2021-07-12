@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Personagem : MonoBehaviour
 {
 
-    public int health = 15;
+    public int health = 500;
     public float speed = 3f; 
     private Vector2 direction = Vector2.zero; 
     private Rigidbody2D rb;
@@ -38,6 +39,7 @@ public class Personagem : MonoBehaviour
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            Debug.Log("Game Over");
         }
 
         GroundCheck();
@@ -98,6 +100,13 @@ public class Personagem : MonoBehaviour
     {
         health -= damage;
         
+    }
+
+    
+
+    void ReloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
