@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2464458744562331478}
   - component: {fileID: 2464458744562331474}
   - component: {fileID: 2464458744562331475}
-  - component: {fileID: 2464458744562331472}
   - component: {fileID: 2464458744562331501}
   - component: {fileID: 2464458744562331500}
   - component: {fileID: 1861546876461213846}
+  - component: {fileID: 406673931165439572}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -137,29 +137,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8220675, y: 1.9746354}
   m_EdgeRadius: 0
---- !u!114 &2464458744562331472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2464458744562331479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb6f05db9c242cf478537d684ce7b742, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 300
-  speed: 5
-  jumpForce: 7
-  foot: {fileID: 2464458745475707046}
-  collisionRadius: 0.2
-  layerGround:
-    serializedVersion: 2
-    m_Bits: 8
-  isOnFloor: 0
-  jumpAudio: {fileID: 0}
-  explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
 --- !u!114 &2464458744562331501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +270,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &406673931165439572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2464458744562331479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6f05db9c242cf478537d684ce7b742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  speed: 5
+  jumpForce: 7
+  foot: {fileID: 2464458745475707046}
+  collisionRadius: 0.25
+  layerGround:
+    serializedVersion: 2
+    m_Bits: 8
+  isOnFloor: 0
+  jumpAudio: {fileID: 0}
+  explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
+  texto: {fileID: 0}
 --- !u!1 &2464458744762153678
 GameObject:
   m_ObjectHideFlags: 0

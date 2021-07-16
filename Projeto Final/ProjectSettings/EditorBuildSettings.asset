@@ -8,4 +8,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b0b2208847fa82f4b90c30733c61436d
+  - enabled: 1
+    path: Assets/Scenes/LevelTest.unity
+    guid: f2c6c2e3a0425f74ab101d6730e3514d
+  - enabled: 1
+    path: Assets/Scenes/Mapa 1 Terra.unity
+    guid: ae002675a1cd1bf429e62c04d69ce6b1
+  - enabled: 1
+    path: "Assets/Scenes/Mapa 2 \xC1gua.unity"
+    guid: 32fe3059fd810af489e26b4c31da2cef
+  - enabled: 1
+    path: Assets/Scenes/Mapa 3 Ar.unity
+    guid: 94d1c9ce90332274ea1350380a181c6b
+  - enabled: 1
+    path: Assets/Scenes/Mapa 4 FogoBoss.unity
+    guid: b18cb060c9404f24ab9238b96891aa6e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1e3c11087172a3949a157f10e899c04d
   m_configObjects: {}

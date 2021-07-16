@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Personagem : MonoBehaviour
 {
 
     public int health = 500;
-    public float speed = 3f; 
+    public float speed = 5f; 
     private Vector2 direction = Vector2.zero; 
     private Rigidbody2D rb;
-    public float jumpForce = 4f; 
+    public float jumpForce = 7f; 
     private bool isJump = false;
     public Transform foot; 
     public float collisionRadius = 0.25f; 
@@ -22,10 +23,12 @@ public class Personagem : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip jumpAudio;
     public GameObject explosion;
+    public Text texto;
 
     void Start()
     {
-
+        texto = GameObject.Find("Vida").GetComponent<Text>();
+        texto.text = health.ToString();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
@@ -98,11 +101,10 @@ public class Personagem : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        health--;
+        texto.text = health.ToString();
         
     }
-
-    
 
     void ReloadLevel()
     {
