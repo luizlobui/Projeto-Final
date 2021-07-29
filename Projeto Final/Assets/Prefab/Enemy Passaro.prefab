@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2736459461005778576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: -0.44, z: 0}
+  m_LocalPosition: {x: -1.065, y: -0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2736459461876054428}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2736459461138299380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.207, y: -0.998, z: 0}
+  m_LocalPosition: {x: 0.15, y: -1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2736459461876054428}
@@ -72,8 +72,8 @@ GameObject:
   - component: {fileID: 2736459461876054431}
   - component: {fileID: 2736459461876054430}
   - component: {fileID: 2736459461876054401}
-  - component: {fileID: 2736459461876054400}
   - component: {fileID: 6985239291079452060}
+  - component: {fileID: 1231654089}
   m_Layer: 0
   m_Name: Enemy Passaro
   m_TagString: Enemy
@@ -88,9 +88,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2736459461876054403}
-  m_LocalRotation: {x: 0, y: -0, z: -0.005337636, w: 0.99998575}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0053406316, w: 0.99998575}
   m_LocalPosition: {x: 6.74, y: -1.72, z: 0}
-  m_LocalScale: {x: 1.2209185, y: 1.2504095, z: 1}
+  m_LocalScale: {x: 1.0965906, y: 1.1265934, z: 1}
   m_Children:
   - {fileID: 2736459461138299381}
   - {fileID: 2736459461005778577}
@@ -161,13 +161,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyspeed: 1
-  health: 6
+  health: 3
   explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
   foot: {fileID: 2736459461138299381}
   layerGround:
     serializedVersion: 2
     m_Bits: 8
   collisionRadius: 0.25
+  Distance: 15
 --- !u!95 &2736459461876054401
 Animator:
   serializedVersion: 3
@@ -187,32 +188,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &2736459461876054400
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2736459461876054403}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.06762749, y: -0.28549832}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.864745, y: 1.7257789}
-  m_EdgeRadius: 0.75
 --- !u!114 &6985239291079452060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,5 +204,29 @@ MonoBehaviour:
   fireRate: 0.3
   spawnBullet: {fileID: 2736459461005778577}
   canShoot: 1
-  audioSource: {fileID: 0}
-  shootClip: {fileID: 0}
+--- !u!61 &1231654089
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736459461876054403}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.085710645, y: -0.23794305}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8285787, y: 1.5196531}
+  m_EdgeRadius: 0

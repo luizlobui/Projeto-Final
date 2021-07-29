@@ -56,10 +56,5 @@ public class Enemy : MonoBehaviour
             health -= damage;
         }
 
-    void GroundCheck()
-    {
-        isOnFloor = Physics2D.OverlapCircle(foot.position, collisionRadius, layerGround);
-    }
-
 }
 
