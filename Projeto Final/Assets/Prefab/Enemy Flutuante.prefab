@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3347900262567820740}
   - component: {fileID: 7746038307469795801}
   - component: {fileID: 2736459460952755102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Flutuante
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -135,12 +135,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3347900262567820742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32c0e9f8393c35248bb0b0569b977dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletEnemy: {fileID: 4288875300578467374, guid: c6d1f69be2c9a6b4a966501431274fea, type: 3}
+  bulletEnemy: {fileID: 0}
   fireRate: 0.3
   spawnBullet: {fileID: 3347900264369347284}
   canShoot: 1
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3347900264369347284}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: spawnBulletEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3347900264514190768}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: foot
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}

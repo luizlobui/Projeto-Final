@@ -41,8 +41,9 @@ public class Personagem : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            
             Debug.Log("Game Over");
+            Invoke("ReloadLevel", 0f);
         }
 
         GroundCheck();
