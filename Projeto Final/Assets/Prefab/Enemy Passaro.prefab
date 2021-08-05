@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce925056db4b6404aa01e7b253e3b893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyspeed: 1
+  enemyspeed: 2
   health: 3
   explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
   foot: {fileID: 2736459461138299381}

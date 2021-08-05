@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShoterEnemy : MonoBehaviour
 {
     public BulletEnemy bulletEnemy;
-    public float fireRate = 0.3f;
+    public float fireRate = 1f;
     public Transform spawnBullet;
     [SerializeField]
     private bool canShoot = true;

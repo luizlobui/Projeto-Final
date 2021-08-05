@@ -72,8 +72,8 @@ GameObject:
   - component: {fileID: 8267750164170592871}
   - component: {fileID: 8267750164170592870}
   - component: {fileID: 8267750164170592889}
-  - component: {fileID: 4014299058760076900}
   - component: {fileID: 7325729369048655443}
+  - component: {fileID: 7809954159930121240}
   m_Layer: 0
   m_Name: Enemy Boss
   m_TagString: Enemy
@@ -88,7 +88,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8267750164170592891}
-  m_LocalRotation: {x: 0, y: -0, z: -0.005337636, w: 0.99998575}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0053406316, w: 0.99998575}
   m_LocalPosition: {x: 4.41, y: -0.05, z: 0}
   m_LocalScale: {x: 2.0151858, y: 1.8563362, z: 1}
   m_Children:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce925056db4b6404aa01e7b253e3b893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyspeed: 2
+  enemyspeed: 0
   health: 3
   explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
   foot: {fileID: 8267750163835490829}
@@ -168,7 +168,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   collisionRadius: 0.25
-  Distance: 15
+  Distance: 50
 --- !u!95 &8267750164170592889
 Animator:
   serializedVersion: 3
@@ -177,7 +177,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8267750164170592891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -188,22 +188,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4014299058760076900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8267750164170592891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32c0e9f8393c35248bb0b0569b977dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletEnemy: {fileID: 0}
-  fireRate: 0.3
-  spawnBullet: {fileID: 8267750163984004457}
-  canShoot: 1
 --- !u!61 &7325729369048655443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,3 +214,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &7809954159930121240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267750164170592891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d67aa0122d0704c9319c85952aecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletBoss: {fileID: 3383324134030042308, guid: 3fae8f58a9af4a741a8259dfcf0c4327, type: 3}
+  fireRate: 0.3
+  spawnBullet: {fileID: 0}
+  canShoot: 1
