@@ -292,7 +292,7 @@ MonoBehaviour:
     m_Bits: 8
   isOnFloor: 0
   jumpAudio: {fileID: 0}
-  explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
+  explosion: {fileID: 6624374037332515571, guid: da9b0ae1f127b6d42b1678ef9ba9f2a6, type: 3}
   texto: {fileID: 0}
 --- !u!1 &2464458744762153678
 GameObject:

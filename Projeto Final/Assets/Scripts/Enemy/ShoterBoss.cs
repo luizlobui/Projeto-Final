@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShoterBoss : MonoBehaviour
 {
     public BulletBoss bulletBoss;
-    public float fireRate = 5f;
+    public float fireRate = 2f;
     public Transform spawnBullet;
     [SerializeField]
     private bool canShoot = true;
@@ -20,6 +20,7 @@ public class ShoterBoss : MonoBehaviour
     void Update()
     {
         StartCoroutine(SpawnBullet());
+
     }
     IEnumerator SpawnBullet()
     {
@@ -29,5 +30,7 @@ public class ShoterBoss : MonoBehaviour
 
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
+
+        
     }
 }

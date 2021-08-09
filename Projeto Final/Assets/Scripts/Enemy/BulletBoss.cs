@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletBoss : MonoBehaviour
 {
-    public float speed = 15f;
+    public float speed = 1f;
     private Rigidbody2D rb;
     public int damage = 1;
     public GameObject playerColision;
@@ -14,8 +14,7 @@ public class BulletBoss : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * speed;
-
+        rb.velocity = -transform.right * speed;
         _personagem = player.GetComponent<Personagem>();
     }
 
@@ -25,12 +24,10 @@ public class BulletBoss : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             Debug.Log("Colidiu com o jogador");
-            other.gameObject.GetComponent<Personagem>().TakeDamage(damage);
-
-            playerColision = other.gameObject;
+            other.gameObject.GetComponent<Personagem>().TakeDamage(damage);           
         }
 
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 0.1f);
     }
 
 }
