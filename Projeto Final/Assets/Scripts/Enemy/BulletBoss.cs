@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletBoss : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = 0f;
     private Rigidbody2D rb;
     public int damage = 1;
     public GameObject playerColision;

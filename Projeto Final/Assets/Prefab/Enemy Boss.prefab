@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267750163835490829}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: foot
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267750163984004457}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: spawnBulletEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 7325729369048655443}
   - component: {fileID: 7809954159930121240}
   - component: {fileID: 1418392287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -90,8 +90,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8267750164170592891}
   m_LocalRotation: {x: 0, y: 0, z: -0.0053406316, w: 0.99998575}
-  m_LocalPosition: {x: 4.41, y: -0.05, z: 0}
-  m_LocalScale: {x: 1.6260535, y: 1.6898229, z: 1}
+  m_LocalPosition: {x: 4.1442, y: -0.3018, z: 0}
+  m_LocalScale: {x: 1.3631206, y: 1.440574, z: 1}
   m_Children:
   - {fileID: 8267750163835490829}
   - {fileID: 8267750163984004457}
@@ -162,14 +162,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyspeed: 0
-  health: 50
+  health: 20
   explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
   foot: {fileID: 8267750163835490829}
   layerGround:
     serializedVersion: 2
     m_Bits: 8
   collisionRadius: 0.25
-  Distance: 15
+  Distance: 10
 --- !u!95 &8267750164170592889
 Animator:
   serializedVersion: 3
@@ -199,10 +199,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.004890859}
+  m_Offset: {x: 0.0058540106, y: -0.27704823}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +213,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.9902183}
+  m_Size: {x: 1.2637775, y: 1.4459035}
   m_EdgeRadius: 0
 --- !u!114 &7809954159930121240
 MonoBehaviour:
@@ -239,7 +239,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8267750164170592891}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

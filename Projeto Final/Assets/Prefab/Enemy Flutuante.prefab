@@ -102,14 +102,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyspeed: 3
-  health: 3
+  health: 1
   explosion: {fileID: 282278321646149835, guid: 17c2a7c20314ad2418ccc464756292ac, type: 3}
   foot: {fileID: 3347900264514190768}
   layerGround:
     serializedVersion: 2
     m_Bits: 8
   collisionRadius: 0.25
-  Distance: 15
+  Distance: 5
 --- !u!95 &3347900262567820740
 Animator:
   serializedVersion: 3
